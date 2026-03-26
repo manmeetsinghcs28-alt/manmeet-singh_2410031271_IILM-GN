@@ -1,39 +1,26 @@
-Scam / Spam Detection Using Machine Learning
+# Spam/Scam Detection System
 
-Overview
-This project detects scam or spam messages using Machine Learning.
-It uses TF-IDF for text feature extraction and Logistic Regression for classification.
-A Flask web application allows users to test messages in real time.
-All predictions are stored in an SQLite database and can be exported as CSV.
+## Description
+This project detects whether an email or message is SAFE or SCAM/SPAM using Machine Learning.
 
-Technologies Used
-- Python
-- TF-IDF Vectorization
-- Logistic Regression
-- Flask
-- SQLite
-- HTML & CSS
+## Features
+- Detect spam emails
+- Detect scam messages
+- Real-time prediction
+- Stores previous prediction history
 
-How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
+## Technology Used
+Python
+Scikit-learn
+TF-IDF Vectorizer
+Logistic Regression
+Flask
+SQLite
 
-2. Train the model:
-   python trainer.py
+## How it works
+The system converts text into numbers using TF-IDF and predicts result using Logistic Regression model.
 
-3. Start the web app:
-   python app.py
-
-Open the browser at:
-http://127.0.0.1:5000
-
-Features
-- Scam / Safe prediction with confidence
-- Clean web interface
-- History logging using SQLite
-- Export results as CSV
-
-Note
-This is a student project for educational purposes.
-Predictions are probabilistic and may not be 100% accurate.
-
+## Author
+Manmeet Singh
+B.Tech CSE AIML
+IILM University Greater Noida
